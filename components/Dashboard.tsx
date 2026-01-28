@@ -11,8 +11,17 @@ import {
   WhoopWorkout,
 } from "@/lib/whoop";
 import { getReadinessSummary, colors, normalizeHrvToMs } from "@/lib/theme";
+import {
+  BiomarkerDataStore,
+  loadBiomarkerData,
+  fetchBiomarkerData,
+} from "@/lib/biomarkers";
 import TodayMetricCard from "@/components/TodayMetricCard";
 import TrendChart from "@/components/TrendChart";
+import BiomarkerTrendChart from "@/components/biomarkers/BiomarkerTrendChart";
+import BiomarkerSummaryBar from "@/components/biomarkers/BiomarkerSummaryBar";
+import BiomarkerSummaryTable from "@/components/biomarkers/BiomarkerSummaryTable";
+import AddResultForm from "@/components/biomarkers/AddResultForm";
 
 const TIME_RANGES = [
   { label: "7D", days: 7 },
@@ -32,6 +41,9 @@ export default function Dashboard() {
   const [workoutData, setWorkoutData] = useState<WhoopWorkout[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [biomarkerData, setBiomarkerData] = useState<BiomarkerDataStore | null>(null);
+  const [biomarkerSectionOpen, setBiomarkerSectionOpen] = useState<Record<string, boolean>>({});
+  const [showAddResultForm, setShowAddResultForm] = useState(false);
 
   const handleLogout = async () => {
     try {
@@ -80,6 +92,23 @@ export default function Dashboard() {
 
     loadData();
   }, [rangeDays]);
+
+  useEffect(() => {
+    let cancelled = false;
+    // Fetch from API first (reads Excel directly), fallback to localStorage/sample
+    (async () => {
+      const fromApi = await fetchBiomarkerData();
+      if (!cancelled && fromApi) {
+        setBiomarkerData(fromApi);
+      } else if (!cancelled) {
+        // Only use localStorage/sample data if API fails
+        setBiomarkerData(loadBiomarkerData());
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // Chart data: API returns newest first; reverse so oldest→newest for X-axis
   const chartRecovery = useMemo(
@@ -227,12 +256,21 @@ export default function Dashboard() {
               Your health metrics and trends
             </p>
           </div>
-          <button
-            onClick={handleLogout}
-            className="self-start sm:self-center px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors text-sm font-medium"
-          >
-            Logout
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setShowAddResultForm(true)}
+              className="px-4 py-2 rounded-xl bg-teal-600 text-white hover:bg-teal-700 text-sm font-medium"
+            >
+              Add result
+            </button>
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors text-sm font-medium"
+            >
+              Logout
+            </button>
+          </div>
         </div>
 
         {/* Readiness summary */}
@@ -370,6 +408,97 @@ export default function Dashboard() {
             />
           </div>
         </section>
+
+        {/* Biomarkers */}
+        {biomarkerData && (
+          <section className="mt-10">
+            <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
+              Biomarkers
+            </h2>
+
+            {/* Summary Bar */}
+            <BiomarkerSummaryBar data={biomarkerData} />
+
+            {/* Summary Table */}
+            <BiomarkerSummaryTable
+              data={biomarkerData}
+              onBiomarkerClick={(categoryId, biomarkerId) => {
+                // Open the category if not already open
+                setBiomarkerSectionOpen((prev) => ({
+                  ...prev,
+                  [categoryId]: true,
+                }));
+                // Wait for the category to open, then scroll to the chart
+                setTimeout(() => {
+                  const chartElement = document.getElementById(`biomarker-chart-${biomarkerId}`);
+                  if (chartElement) {
+                    chartElement.scrollIntoView({ behavior: "smooth", block: "center" });
+                    // Add a brief highlight effect
+                    chartElement.classList.add("ring-2", "ring-teal-500", "ring-offset-2");
+                    setTimeout(() => {
+                      chartElement.classList.remove("ring-2", "ring-teal-500", "ring-offset-2");
+                    }, 2000);
+                  }
+                }, 100);
+              }}
+            />
+
+            {/* Category Details */}
+            <h3 className="text-lg font-medium text-slate-700 dark:text-slate-300 mb-4 mt-8">
+              Trends by Category
+            </h3>
+            <p className="text-slate-600 dark:text-slate-400 mb-6">
+              Lab results over time. Green zone = optimal range.
+            </p>
+            <div className="space-y-4">
+              {biomarkerData.categories.map((category) => {
+                const isOpen = biomarkerSectionOpen[category.id] ?? false;
+                return (
+                  <div
+                    key={category.id}
+                    className="rounded-2xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800/80 overflow-hidden"
+                  >
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setBiomarkerSectionOpen((prev) => ({
+                          ...prev,
+                          [category.id]: !prev[category.id],
+                        }))
+                      }
+                      className="w-full flex items-center justify-between p-4 text-left hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors"
+                    >
+                      <span className="font-semibold text-slate-900 dark:text-white">
+                        {category.name}
+                      </span>
+                      <span className="text-slate-500">{isOpen ? "▼" : "▶"}</span>
+                    </button>
+                    {isOpen && (
+                      <div className="border-t border-slate-200 dark:border-slate-600 p-4">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                          {category.biomarkers.map((biomarker) => (
+                            <BiomarkerTrendChart
+                              key={biomarker.id}
+                              biomarker={biomarker}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {showAddResultForm && biomarkerData && (
+          <AddResultForm
+            data={biomarkerData}
+            onSave={setBiomarkerData}
+            onClose={() => setShowAddResultForm(false)}
+          />
+        )}
       </div>
     </div>
   );

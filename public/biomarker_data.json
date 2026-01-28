@@ -1,0 +1,2669 @@
+{
+  "categories": [
+    {
+      "name": "Primary",
+      "biomarkers": [
+        {
+          "name": "Fasting Glucose",
+          "optimalRange": "<90",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 97,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2022-11-29",
+              "value": 90,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 81,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 117,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 68,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 77,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 101,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 93,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 107,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 93,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 100,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 77,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 77,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 88,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 109,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 76,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 91,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 95,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 108,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 89,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 104,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Triglicerides",
+          "optimalRange": "<80",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 58,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 66,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 53,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 45,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 74,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 130,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 41,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 53,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 53,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 53,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 57,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 45,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 42,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 40,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 64,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 85,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 98,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 37,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 42,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 48,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "HDL",
+          "optimalRange": "50<>90",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 72,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 87,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 88,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 89,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 88,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 74,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 80,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 86,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 73,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 71,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 77,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 81,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 76,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 95,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 85,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 88,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 93,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 89,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 96,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 81,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Triglicerides-to-HDL ratio",
+          "optimalRange": "<1.0",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 0.8055555555555556,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 0.7586206896551724,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 0.6022727272727273,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 0.5056179775280899,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 0.8409090909090909,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 1.7567567567567568,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 0.5125,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.6162790697674418,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.726027397260274,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 0.7464788732394366,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 0.7402597402597403,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 0.5555555555555556,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 0.5526315789473685,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 0.42105263157894735,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 0.7529411764705882,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.9659090909090909,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 1.053763440860215,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 0.4157303370786517,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 0.4375,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 0.5925925925925926,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Waist Circumference",
+          "optimalRange": "<35",
+          "measurements": [
+            {
+              "date": "2024-08-30",
+              "value": 32,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 32,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 32,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 32,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 32,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 32,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 32,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 32,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 32,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 32,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 32,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 32,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 32,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 32,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 32,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 32,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Blood Pressure",
+          "optimalRange": "120 / 80",
+          "measurements": []
+        }
+      ]
+    },
+    {
+      "name": "Metabolic Health",
+      "biomarkers": [
+        {
+          "name": "Fasting Insulin",
+          "optimalRange": "2 <> 5",
+          "measurements": [
+            {
+              "date": "2023-07-28",
+              "value": 1.7,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 2.7,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 1.9,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 2.9,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 4.3,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 60.2,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 4.5,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 3,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 3,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 2.2,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 1.9,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 1.8,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 3.1,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 2.3,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 5.6,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 2.2,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 2.6,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 3.1,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "HOMA-IR",
+          "optimalRange": "<1.0",
+          "measurements": [
+            {
+              "date": "2024-08-30",
+              "value": 0.551358024691358,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 1.0723456790123456,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 13.823703703703705,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 1.1888888888888889,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.6888888888888889,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 0.7407407407407407,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 0.41827160493827165,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 0.4128395061728395,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 0.4844444444444445,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 0.5817283950617284,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.5167901234567901,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 1.3135802469135802,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 0.5866666666666667,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 0.571358024691358,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 0.7960493827160494,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Hemoglobin A1c (HbA1c)",
+          "optimalRange": "4.8 <> 5.6",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 0.052,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 0.049,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 0.056,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 0.055,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 0.055,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 0.057,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 0.055,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.053,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.055,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 0.053,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 0.054,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 0.056,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 0.055,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 0.055,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 0.056,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.056,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.056,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 0.056,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 0.056,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 0.055,
+              "provider": "Lifeforce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Liver",
+      "biomarkers": [
+        {
+          "name": "AST (Liver)",
+          "optimalRange": "<40",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 23,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2022-11-29",
+              "value": 18,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 24,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 41,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 18,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 21,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 25,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 23,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 22,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 27,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 23,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 27,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 26,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 26,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 24,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 23,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 19,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 27,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 38,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 21,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 20,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "ALT (Liver)",
+          "optimalRange": "<32",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 29,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2022-11-29",
+              "value": 16,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 23,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 32,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 25,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 24,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 48,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 18,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 18,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 24,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 23,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 19,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 22,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 21,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 19,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 21,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 15,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 17,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 22,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 18,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 17,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "GGT (Liver)",
+          "optimalRange": "<25",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 13,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 14,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 15,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 17,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 18,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 29,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 11,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 14,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 12,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 12,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 12,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 12,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 15,
+              "provider": "Ultrahuman"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vitamins",
+      "biomarkers": [
+        {
+          "name": "Vitamin D",
+          "optimalRange": "50 <> 100",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 31,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 34,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 34,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 42,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 49,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 59.8,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 66.4,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 75.5,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 59,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 85,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 92.7,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 122,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 102,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 87.4,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 55.3,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 59.3,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 62.6,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 71.6,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 75,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 84,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Vitamin B12",
+          "optimalRange": "",
+          "measurements": [
+            {
+              "date": "2025-05-01",
+              "value": 986,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 2000,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 1451,
+              "provider": "Biograph"
+            }
+          ]
+        },
+        {
+          "name": "Folate",
+          "optimalRange": ">3",
+          "measurements": [
+            {
+              "date": "2025-05-01",
+              "value": 17.8,
+              "provider": "Eternal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heart Health",
+      "biomarkers": [
+        {
+          "name": "ApoB",
+          "optimalRange": "<80",
+          "measurements": [
+            {
+              "date": "2023-07-28",
+              "value": 89,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 85,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 92,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 96,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 88,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 87,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 91,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 94,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 89,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 86,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 84,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 71,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 77,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 82,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 78,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 84,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 81,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 104,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 83,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "LDL-Cholesterol",
+          "optimalRange": "<70",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 176,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 109,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 119,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 129,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 121,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 112,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 112,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 121,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 115,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 113,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 112,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 105,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 88,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 81,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 116,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 110,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 107,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 107,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 121,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 94,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "VLDL (very-low-density lipoprotein)",
+          "optimalRange": "4 <> 47",
+          "measurements": [
+            {
+              "date": "2024-11-04",
+              "value": 23,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 8,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 10,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 9,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 11,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 15,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 17,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 7,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 41.9,
+              "provider": "Ultrahuman"
+            }
+          ]
+        },
+        {
+          "name": "Liporotein A",
+          "optimalRange": "<75",
+          "measurements": [
+            {
+              "date": "2024-11-04",
+              "value": 130,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 113,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 105.4,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 228,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 154,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 103.2,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 100.3,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 113,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 124,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 158.8,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 186,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 113,
+              "provider": "Lifeforce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kidney",
+      "biomarkers": [
+        {
+          "name": "BUN",
+          "optimalRange": "6 <> 25",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 24,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 23,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 25,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 24,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 23,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 26,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 24,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 23,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 26,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 24.92,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 28,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 27,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 28,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 19,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 24,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 23,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Creatinine",
+          "optimalRange": "0.8 <> 1.3",
+          "measurements": [
+            {
+              "date": "2024-11-04",
+              "value": 0.9,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 1.07,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 1,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 0.89,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 1.15,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 1,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 1.14,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 1.02,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 0.98,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 0.87,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "BUN / Creatinine",
+          "optimalRange": "<20",
+          "measurements": [
+            {
+              "date": "2025-03-22",
+              "value": 21.49532710280374,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 26,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 28,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 24.347826086956523,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 27,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 24.56140350877193,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 18.627450980392158,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 24.489795918367346,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 26.436781609195403,
+              "provider": "Lifeforce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inflammation",
+      "biomarkers": [
+        {
+          "name": "High Sensitivity CRP (hsCRP)",
+          "optimalRange": "<1",
+          "measurements": [
+            {
+              "date": "2022-11-29",
+              "value": 1.1,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 0.7,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 2.8,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 0.5,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 0.2,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 1.02,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 0.18,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.26,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 0.2,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 0.2,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 0.27,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 0.25,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 0.4,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 0.4,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 0.22,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.22,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 1,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 0.59,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 0.4,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 0.6,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Homocystine",
+          "optimalRange": "<10",
+          "measurements": [
+            {
+              "date": "2024-12-26",
+              "value": 3,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 14.5,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 11.7,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 7.9,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 8.2,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 6.6,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 7.4,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 13.6,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Uric Acid",
+          "optimalRange": "<4",
+          "measurements": [
+            {
+              "date": "2024-08-30",
+              "value": 0,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 3.9,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 4,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 3.2,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 4.3,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 4.4,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 4.2,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 5.1,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 4.1,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 3.9,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 4.4,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 4.7,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 4.8,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 4.4,
+              "provider": "Lifeforce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hormones",
+      "biomarkers": [
+        {
+          "name": "Free Testosterone",
+          "optimalRange": "12<> 25",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 10.7,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2022-11-29",
+              "value": 7.9,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 9.4,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 8.5,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 9.3,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 7.8,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 12.1,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 9.4,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 10.3,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 8.4,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 6.6,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 8.8,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 7,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 11.9,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 4.17,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 3.26,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 30.7,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 5.49,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 22.4,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 22.4,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Total Testosterone",
+          "optimalRange": "700 <> 1,200",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 536,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2022-11-29",
+              "value": 568,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 741,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 584,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 671,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 551,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-11-04",
+              "value": 604,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 483,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 560,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 455,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 412,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 426,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 360,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 457,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 243,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 183,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 1369,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 321,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 531,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 1127,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 1063,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Cortisol",
+          "optimalRange": "6.2  <> 19.4",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 8.1,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2022-11-29",
+              "value": 11,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-07-28",
+              "value": 19.6,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2023-12-12",
+              "value": 17.4,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-05-09",
+              "value": 14.3,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-08-30",
+              "value": 9.2,
+              "provider": "Insidetracker"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 10.6,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 10.9,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 11.9,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 12.4,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 17.6,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 18.1,
+              "provider": "Ultrahuman"
+            }
+          ]
+        },
+        {
+          "name": "Prolactin",
+          "optimalRange": "4 <> 15.2",
+          "measurements": [
+            {
+              "date": "2024-11-04",
+              "value": 16.8,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 10.4,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 10.5,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 10.4,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 18.9,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 10,
+              "provider": "Ultrahuman"
+            }
+          ]
+        },
+        {
+          "name": "DHEA Sulfate",
+          "optimalRange": "400 <> 500",
+          "measurements": [
+            {
+              "date": "2017-10-20",
+              "value": 198,
+              "provider": "Athlete Blood Test"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 125,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 140,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 116,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 136,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 203,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 184,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 217,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 274,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 192,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 213,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 425,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Insulin-like Growth Factor",
+          "optimalRange": "200 <> 280",
+          "measurements": [
+            {
+              "date": "2024-11-04",
+              "value": 181,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2024-12-26",
+              "value": 113,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 121,
+              "provider": "Blueprint"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 90,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 121,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 112,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 142,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 149,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "PSA",
+          "optimalRange": "<4.0",
+          "measurements": [
+            {
+              "date": "2024-11-04",
+              "value": 0.6,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 0.5,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-04-16",
+              "value": 0.9,
+              "provider": "Superpower"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 0.6,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 0.4,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.5,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 0.4,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 0.5,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 0.57,
+              "provider": "Lifeforce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toxins",
+      "biomarkers": [
+        {
+          "name": "Mercury",
+          "optimalRange": "<10",
+          "measurements": [
+            {
+              "date": "2024-12-26",
+              "value": 11.4,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2024-12-31",
+              "value": 17,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-05",
+              "value": 12,
+              "provider": "Function Health"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 8,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-22",
+              "value": 6,
+              "provider": "Mito Health"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 7.5,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 12,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 12,
+              "provider": "Lifeforce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nutrients / Minerals",
+      "biomarkers": [
+        {
+          "name": "Ferritin",
+          "optimalRange": "50-400",
+          "measurements": [
+            {
+              "date": "2024-12-26",
+              "value": 142,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-03-15",
+              "value": 86,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-05-01",
+              "value": 40,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 51,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 47,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 57,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 50,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 29,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 51,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Magnesium",
+          "optimalRange": "3.7-7",
+          "measurements": [
+            {
+              "date": "2025-05-01",
+              "value": 5.5,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-06-29",
+              "value": 2.1,
+              "provider": "Lifeforce"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 4.8,
+              "provider": "Blokes"
+            },
+            {
+              "date": "2025-07-02",
+              "value": 2.4,
+              "provider": "AXO"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 4.9,
+              "provider": "Ultrahuman"
+            },
+            {
+              "date": "2025-09-04",
+              "value": 2.1,
+              "provider": "Lifeforce"
+            }
+          ]
+        },
+        {
+          "name": "Iron",
+          "optimalRange": "38 - 169",
+          "measurements": [
+            {
+              "date": "2025-05-01",
+              "value": 96,
+              "provider": "Eternal"
+            },
+            {
+              "date": "2025-07-22",
+              "value": 177,
+              "provider": "Biograph"
+            },
+            {
+              "date": "2025-08-21",
+              "value": 193,
+              "provider": "Ultrahuman"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
