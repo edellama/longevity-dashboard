@@ -14,7 +14,8 @@
     "fetch-garmin:90": "python3 scripts/fetch-garmin.py --days 90",
     "lingo-setup": "python3 scripts/fetch-lingo.py --setup",
     "fetch-lingo": "python3 scripts/fetch-lingo.py",
-    "import-lingo": "python3 scripts/import-lingo-csv.py"
+    "import-lingo": "python3 scripts/import-lingo-csv.py",
+    "consolidate-data": "python3 scripts/consolidate-data.py"
   },
   "dependencies": {
     "next": "^14.2.0",

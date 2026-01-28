@@ -24,6 +24,7 @@ import BiomarkerSummaryTable from "@/components/biomarkers/BiomarkerSummaryTable
 import AddResultForm from "@/components/biomarkers/AddResultForm";
 import ExerciseSection from "@/components/ExerciseSection";
 import GlucoseSection from "@/components/GlucoseSection";
+import HealthChat from "@/components/HealthChat";
 import { GarminData, fetchGarminData, getLatestWeight, formatWeight, categorizeActivity, formatDuration, getTodaySummary, formatSteps, calculateAverages } from "@/lib/garmin";
 import { LingoData, fetchLingoData, getGlucoseColor, getTrendArrow } from "@/lib/lingo";
 
@@ -351,6 +352,9 @@ export default function Dashboard() {
           </div>
         </div>
 
+        {/* Health AI Chat */}
+        <HealthChat />
+
         {/* Readiness summary */}
         <div className="mb-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-600/50 shadow-md p-4 sm:p-5">
           <p className="text-slate-700 dark:text-slate-200 text-lg sm:text-xl font-medium">
@@ -545,6 +549,19 @@ export default function Dashboard() {
               }))}
               color="#f97316"
               yAxisLabel="Strain"
+            />
+            <TrendChart
+              title="Resting Heart Rate"
+              data={chartRecovery.map((r) => ({
+                date: new Date(r.created_at).toLocaleDateString(undefined, {
+                  month: "short",
+                  day: "numeric",
+                }),
+                value: r.score?.resting_heart_rate ?? 0,
+              }))}
+              color="#ef4444"
+              yAxisLabel="bpm"
+              yAxisDomain={[40, 70]}
             />
             <TrendChart
               title="Steps"
