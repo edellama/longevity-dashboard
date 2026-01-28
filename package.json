@@ -7,7 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "import-biomarkers": "node scripts/import-biomarkers.js"
+    "import-biomarkers": "node scripts/import-biomarkers.js",
+    "garmin-setup": "python3 scripts/fetch-garmin.py --setup",
+    "fetch-garmin": "python3 scripts/fetch-garmin.py",
+    "fetch-garmin:90": "python3 scripts/fetch-garmin.py --days 90",
+    "lingo-setup": "python3 scripts/fetch-lingo.py --setup",
+    "fetch-lingo": "python3 scripts/fetch-lingo.py",
+    "import-lingo": "python3 scripts/import-lingo-csv.py"
   },
   "dependencies": {
     "next": "^14.2.0",

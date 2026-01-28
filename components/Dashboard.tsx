@@ -22,6 +22,10 @@ import BiomarkerTrendChart from "@/components/biomarkers/BiomarkerTrendChart";
 import BiomarkerSummaryBar from "@/components/biomarkers/BiomarkerSummaryBar";
 import BiomarkerSummaryTable from "@/components/biomarkers/BiomarkerSummaryTable";
 import AddResultForm from "@/components/biomarkers/AddResultForm";
+import ExerciseSection from "@/components/ExerciseSection";
+import GlucoseSection from "@/components/GlucoseSection";
+import { GarminData, fetchGarminData, getLatestWeight, formatWeight, categorizeActivity, formatDuration } from "@/lib/garmin";
+import { LingoData, fetchLingoData, getGlucoseColor, getTrendArrow } from "@/lib/lingo";
 
 const TIME_RANGES = [
   { label: "7D", days: 7 },
@@ -44,6 +48,8 @@ export default function Dashboard() {
   const [biomarkerData, setBiomarkerData] = useState<BiomarkerDataStore | null>(null);
   const [biomarkerSectionOpen, setBiomarkerSectionOpen] = useState<Record<string, boolean>>({});
   const [showAddResultForm, setShowAddResultForm] = useState(false);
+  const [garminData, setGarminData] = useState<GarminData | null>(null);
+  const [lingoData, setLingoData] = useState<LingoData | null>(null);
 
   const handleLogout = async () => {
     try {
@@ -110,6 +116,34 @@ export default function Dashboard() {
     };
   }, []);
 
+  // Load Garmin data
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const data = await fetchGarminData();
+      if (!cancelled && data) {
+        setGarminData(data);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // Load Lingo (CGM) data
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const data = await fetchLingoData();
+      if (!cancelled && data) {
+        setLingoData(data);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   // Chart data: API returns newest first; reverse so oldest→newest for X-axis
   const chartRecovery = useMemo(
     () => [...recoveryData].reverse(),
@@ -160,6 +194,36 @@ export default function Dashboard() {
         : null;
     return { recoveryAvg, sleepAvg, strainAvg, hrvAvg };
   }, [recoveryData, sleepData, workoutData]);
+
+  // Today's exercise from Garmin (must be before early returns to satisfy hooks rules)
+  const todayExercise = useMemo(() => {
+    if (!garminData) return null;
+
+    const today = new Date().toISOString().slice(0, 10);
+    const todayActivities = garminData.activities.filter(a => a.date === today);
+
+    if (todayActivities.length === 0) return null;
+
+    const totalDuration = todayActivities.reduce((sum, a) => sum + (a.duration || 0), 0);
+    const totalCalories = todayActivities.reduce((sum, a) => sum + (a.activeCalories || a.calories || 0), 0);
+
+    // Count by category
+    const categories = { running: 0, cycling: 0, swimming: 0, other: 0 };
+    for (const activity of todayActivities) {
+      const cat = categorizeActivity(activity.type);
+      categories[cat]++;
+    }
+
+    return {
+      sessions: todayActivities.length,
+      duration: totalDuration,
+      calories: totalCalories,
+      running: categories.running,
+      cycling: categories.cycling,
+      swimming: categories.swimming,
+      other: categories.other,
+    };
+  }, [garminData]);
 
   if (loading) {
     return (
@@ -243,6 +307,9 @@ export default function Dashboard() {
         ).toFixed(1)} vs 7d avg`
       : undefined;
 
+  // Weight from Garmin
+  const latestWeight = garminData ? getLatestWeight(garminData) : null;
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
@@ -285,7 +352,7 @@ export default function Dashboard() {
           <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
             Today
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6">
             <TodayMetricCard
               title="Recovery"
               value={recoveryScore != null ? `${recoveryScore}%` : "—"}
@@ -314,12 +381,67 @@ export default function Dashboard() {
               comparison={strainComparison}
               borderColor="#f97316"
             />
+            <TodayMetricCard
+              title="Weight"
+              value={latestWeight ? formatWeight(latestWeight.weight) : "—"}
+              comparison={latestWeight ? `From ${new Date(latestWeight.date).toLocaleDateString(undefined, { month: "short", day: "numeric" })}` : undefined}
+              borderColor="#10b981"
+            />
+            <TodayMetricCard
+              title="Glucose"
+              value={lingoData?.current ? `${lingoData.current.value}` : "—"}
+              comparison={lingoData?.current ? `${getTrendArrow(lingoData.current.trend)} ${lingoData.current.trendMessage || "mg/dL"}` : "No CGM data"}
+              borderColor={lingoData?.current ? getGlucoseColor(lingoData.current.value) : "#94a3b8"}
+            />
           </div>
           {sleepQuality != null && (
             <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
               Sleep quality: {sleepQuality}%
             </p>
           )}
+
+          {/* Today's Exercise */}
+          <h3 className="text-lg font-medium text-slate-700 dark:text-slate-300 mt-6 mb-3">
+            Today&apos;s Exercise
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+            <TodayMetricCard
+              title="Workouts"
+              value={todayExercise ? `${todayExercise.sessions}` : "0"}
+              comparison={todayExercise ? `${formatDuration(todayExercise.duration)}` : "No workouts yet"}
+              borderColor="#f97316"
+            />
+            <TodayMetricCard
+              title="Calories"
+              value={todayExercise ? `${todayExercise.calories.toLocaleString()}` : "0"}
+              comparison="active calories"
+              borderColor="#ec4899"
+            />
+            <TodayMetricCard
+              title="Running"
+              value={todayExercise ? `${todayExercise.running}` : "0"}
+              comparison="sessions"
+              borderColor="#ef4444"
+            />
+            <TodayMetricCard
+              title="Cycling"
+              value={todayExercise ? `${todayExercise.cycling}` : "0"}
+              comparison="sessions"
+              borderColor="#3b82f6"
+            />
+            <TodayMetricCard
+              title="Swimming"
+              value={todayExercise ? `${todayExercise.swimming}` : "0"}
+              comparison="sessions"
+              borderColor="#06b6d4"
+            />
+            <TodayMetricCard
+              title="Other"
+              value={todayExercise ? `${todayExercise.other}` : "0"}
+              comparison="sessions"
+              borderColor="#8b5cf6"
+            />
+          </div>
         </section>
 
         {/* Time range selector */}
@@ -342,10 +464,10 @@ export default function Dashboard() {
           ))}
         </div>
 
-        {/* Trend charts */}
+        {/* Overview charts */}
         <section>
           <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
-            Trends
+            Overview
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             <TrendChart
@@ -407,6 +529,22 @@ export default function Dashboard() {
               yAxisLabel="Strain"
             />
           </div>
+        </section>
+
+        {/* Exercise */}
+        <section className="mt-10">
+          <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
+            Exercise
+          </h2>
+          <ExerciseSection garminData={garminData} />
+        </section>
+
+        {/* Glucose (CGM) */}
+        <section className="mt-10">
+          <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
+            Glucose
+          </h2>
+          <GlucoseSection lingoData={lingoData} />
         </section>
 
         {/* Biomarkers */}

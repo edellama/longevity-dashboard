@@ -1,0 +1,1532 @@
+{
+  "fetchedAt": "2026-01-28T13:15:44.582487",
+  "dateRange": {
+    "start": "2025-12-29",
+    "end": "2026-01-28"
+  },
+  "dailySummaries": [
+    {
+      "date": "2025-12-29",
+      "steps": null,
+      "calories": null,
+      "activeCalories": null,
+      "distance": null,
+      "floors": null,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": null,
+      "bodyBattery": null
+    },
+    {
+      "date": "2025-12-30",
+      "steps": 0,
+      "calories": 1642.0,
+      "activeCalories": 793.0,
+      "distance": 0,
+      "floors": null,
+      "restingHeartRate": null,
+      "minHeartRate": 95,
+      "maxHeartRate": 141,
+      "averageStress": null,
+      "bodyBattery": null
+    },
+    {
+      "date": "2025-12-31",
+      "steps": 10318,
+      "calories": 2880.0,
+      "activeCalories": 830.0,
+      "distance": 12153,
+      "floors": 5.0,
+      "restingHeartRate": 140,
+      "minHeartRate": 97,
+      "maxHeartRate": 152,
+      "averageStress": 93,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-01",
+      "steps": 4489,
+      "calories": 3348.0,
+      "activeCalories": 1293.0,
+      "distance": 46922,
+      "floors": 0.0,
+      "restingHeartRate": 131,
+      "minHeartRate": 80,
+      "maxHeartRate": 151,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-02",
+      "steps": 9193,
+      "calories": 2776.0,
+      "activeCalories": 726.0,
+      "distance": 10329,
+      "floors": 3.17684,
+      "restingHeartRate": 140,
+      "minHeartRate": 92,
+      "maxHeartRate": 149,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-03",
+      "steps": 472,
+      "calories": 3680.0,
+      "activeCalories": 1630.0,
+      "distance": 5457,
+      "floors": 0.0,
+      "restingHeartRate": 118,
+      "minHeartRate": 61,
+      "maxHeartRate": 150,
+      "averageStress": 57,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-04",
+      "steps": 15394,
+      "calories": 3281.0,
+      "activeCalories": 1231.0,
+      "distance": 19840,
+      "floors": 7.0,
+      "restingHeartRate": 134,
+      "minHeartRate": 74,
+      "maxHeartRate": 159,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-05",
+      "steps": 6117,
+      "calories": 2658.0,
+      "activeCalories": 608.0,
+      "distance": 7753,
+      "floors": 2.0,
+      "restingHeartRate": 135,
+      "minHeartRate": 95,
+      "maxHeartRate": 156,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-06",
+      "steps": 23,
+      "calories": 2974.0,
+      "activeCalories": 919.0,
+      "distance": 19,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": 101,
+      "maxHeartRate": 149,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-07",
+      "steps": 63,
+      "calories": 2141.0,
+      "activeCalories": 1.0,
+      "distance": 52,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-08",
+      "steps": 10319,
+      "calories": 2769.0,
+      "activeCalories": 714.0,
+      "distance": 13559,
+      "floors": 1.12631,
+      "restingHeartRate": 137,
+      "minHeartRate": 68,
+      "maxHeartRate": 206,
+      "averageStress": 11,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-09",
+      "steps": 530,
+      "calories": 1982.0,
+      "activeCalories": 13.0,
+      "distance": 441,
+      "floors": 1.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-10",
+      "steps": 17136,
+      "calories": 3375.0,
+      "activeCalories": 1398.0,
+      "distance": 20818,
+      "floors": 8.0,
+      "restingHeartRate": 136,
+      "minHeartRate": 70,
+      "maxHeartRate": 169,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-11",
+      "steps": 233,
+      "calories": 2158.0,
+      "activeCalories": 95.0,
+      "distance": 671,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-12",
+      "steps": 772,
+      "calories": 2361.0,
+      "activeCalories": 298.0,
+      "distance": 2143,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-13",
+      "steps": 486,
+      "calories": 2662.0,
+      "activeCalories": 599.0,
+      "distance": 3433,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-14",
+      "steps": 2055,
+      "calories": 2789.0,
+      "activeCalories": 726.0,
+      "distance": 4763,
+      "floors": 1.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-15",
+      "steps": 14171,
+      "calories": 3520.0,
+      "activeCalories": 1457.0,
+      "distance": 15913,
+      "floors": 228.1145,
+      "restingHeartRate": 134,
+      "minHeartRate": 65,
+      "maxHeartRate": 153,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-16",
+      "steps": 13289,
+      "calories": 3090.0,
+      "activeCalories": 1027.0,
+      "distance": 13467,
+      "floors": 160.26476,
+      "restingHeartRate": 122,
+      "minHeartRate": 59,
+      "maxHeartRate": 157,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-17",
+      "steps": 441,
+      "calories": 2634.0,
+      "activeCalories": 571.0,
+      "distance": 3339,
+      "floors": 0.33825,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-18",
+      "steps": 11232,
+      "calories": 3032.0,
+      "activeCalories": 957.0,
+      "distance": 12907,
+      "floors": 96.5853,
+      "restingHeartRate": 128,
+      "minHeartRate": 61,
+      "maxHeartRate": 167,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-19",
+      "steps": 0,
+      "calories": 3152.0,
+      "activeCalories": 1749.0,
+      "distance": 81577,
+      "floors": null,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": null,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-20",
+      "steps": 9590,
+      "calories": 2829.0,
+      "activeCalories": 766.0,
+      "distance": 11798,
+      "floors": 6.13222,
+      "restingHeartRate": 146,
+      "minHeartRate": 107,
+      "maxHeartRate": 161,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-21",
+      "steps": 10662,
+      "calories": 2940.0,
+      "activeCalories": 877.0,
+      "distance": 13595,
+      "floors": 3.36483,
+      "restingHeartRate": 135,
+      "minHeartRate": 79,
+      "maxHeartRate": 174,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-22",
+      "steps": 0,
+      "calories": 3018.0,
+      "activeCalories": 953.0,
+      "distance": 0,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": 88,
+      "maxHeartRate": 153,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-23",
+      "steps": 13033,
+      "calories": 3099.0,
+      "activeCalories": 1036.0,
+      "distance": 16518,
+      "floors": 3.22999,
+      "restingHeartRate": 141,
+      "minHeartRate": 81,
+      "maxHeartRate": 152,
+      "averageStress": -1,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-24",
+      "steps": 0,
+      "calories": 3048.0,
+      "activeCalories": 988.0,
+      "distance": 0,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": 97,
+      "maxHeartRate": 137,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-25",
+      "steps": 19981,
+      "calories": 3804.0,
+      "activeCalories": 1732.0,
+      "distance": 24830,
+      "floors": 4.30577,
+      "restingHeartRate": 52,
+      "minHeartRate": 47,
+      "maxHeartRate": 176,
+      "averageStress": 8,
+      "bodyBattery": 14
+    },
+    {
+      "date": "2026-01-26",
+      "steps": null,
+      "calories": 3184.0,
+      "activeCalories": 1130.0,
+      "distance": null,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": 73,
+      "maxHeartRate": 73,
+      "averageStress": -1,
+      "bodyBattery": null
+    },
+    {
+      "date": "2026-01-27",
+      "steps": 2138,
+      "calories": 2751.0,
+      "activeCalories": 687.0,
+      "distance": 12663,
+      "floors": 0.0,
+      "restingHeartRate": 132,
+      "minHeartRate": 50,
+      "maxHeartRate": 147,
+      "averageStress": 35,
+      "bodyBattery": 0
+    },
+    {
+      "date": "2026-01-28",
+      "steps": null,
+      "calories": 187.0,
+      "activeCalories": 0.0,
+      "distance": null,
+      "floors": 0.0,
+      "restingHeartRate": null,
+      "minHeartRate": null,
+      "maxHeartRate": null,
+      "averageStress": -1,
+      "bodyBattery": null
+    }
+  ],
+  "sleepData": [
+    {
+      "date": "2025-12-29",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2025-12-30",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2025-12-31",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-01",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-02",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-03",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-04",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-05",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-06",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-07",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-08",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-09",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-10",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-11",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-12",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "sleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "sleepScore": null
+    }
+  ],
+  "heartRate": [
+    {
+      "date": "2025-12-29",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2025-12-30",
+      "restingHeartRate": 95,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2025-12-31",
+      "restingHeartRate": 140,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-01",
+      "restingHeartRate": 131,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-02",
+      "restingHeartRate": 140,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-03",
+      "restingHeartRate": 118,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-04",
+      "restingHeartRate": 134,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-05",
+      "restingHeartRate": 135,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-06",
+      "restingHeartRate": 101,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-07",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-08",
+      "restingHeartRate": 137,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-09",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-10",
+      "restingHeartRate": 136,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-11",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-12",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-13",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-14",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-15",
+      "restingHeartRate": 134,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-16",
+      "restingHeartRate": 122,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-17",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-18",
+      "restingHeartRate": 128,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-19",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-20",
+      "restingHeartRate": 146,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-21",
+      "restingHeartRate": 135,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-22",
+      "restingHeartRate": 88,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-23",
+      "restingHeartRate": 141,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-24",
+      "restingHeartRate": 97,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-25",
+      "restingHeartRate": 52,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-26",
+      "restingHeartRate": 73,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-27",
+      "restingHeartRate": 132,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    },
+    {
+      "date": "2026-01-28",
+      "restingHeartRate": null,
+      "maxHeartRate": null,
+      "minHeartRate": null
+    }
+  ],
+  "activities": [
+    {
+      "date": "2026-01-28",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3071.485107421875,
+      "distance": 12556.7001953125,
+      "calories": 846.0,
+      "activeCalories": null,
+      "averageHR": 151.0,
+      "maxHR": 177.0,
+      "averageSpeed": 4.0879998207092285
+    },
+    {
+      "date": "2026-01-27",
+      "name": null,
+      "type": "treadmill_running",
+      "parentType": 1,
+      "duration": 3600.7119140625,
+      "distance": 12619.1103515625,
+      "calories": 769.0,
+      "activeCalories": null,
+      "averageHR": 134.0,
+      "maxHR": 155.0,
+      "averageSpeed": 3.505000114440918
+    },
+    {
+      "date": "2026-01-26",
+      "name": null,
+      "type": "indoor_cycling",
+      "parentType": 2,
+      "duration": 5400.498046875,
+      "distance": 0.0,
+      "calories": 1259.0,
+      "activeCalories": null,
+      "averageHR": 132.0,
+      "maxHR": 148.0,
+      "averageSpeed": 0.0
+    },
+    {
+      "date": "2026-01-25",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 5000.06884765625,
+      "distance": 21154.7109375,
+      "calories": 1520.0,
+      "activeCalories": null,
+      "averageHR": 163.0,
+      "maxHR": 177.0,
+      "averageSpeed": 4.230999946594238
+    },
+    {
+      "date": "2026-01-24",
+      "name": null,
+      "type": "indoor_cycling",
+      "parentType": 2,
+      "duration": 5106.69921875,
+      "distance": 0.0,
+      "calories": 1111.0,
+      "activeCalories": null,
+      "averageHR": 128.0,
+      "maxHR": 141.0,
+      "averageSpeed": 0.0
+    },
+    {
+      "date": "2026-01-23",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 4118.169921875,
+      "distance": 16095.259765625,
+      "calories": 1117.0,
+      "activeCalories": null,
+      "averageHR": 146.0,
+      "maxHR": 155.0,
+      "averageSpeed": 3.9079999923706055
+    },
+    {
+      "date": "2026-01-22",
+      "name": null,
+      "type": "indoor_cycling",
+      "parentType": 2,
+      "duration": 4501.9658203125,
+      "distance": 0.0,
+      "calories": 1056.0,
+      "activeCalories": null,
+      "averageHR": 130.0,
+      "maxHR": 158.0,
+      "averageSpeed": 0.0
+    },
+    {
+      "date": "2026-01-21",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3375.31201171875,
+      "distance": 13153.75,
+      "calories": 931.0,
+      "activeCalories": null,
+      "averageHR": 150.0,
+      "maxHR": 175.0,
+      "averageSpeed": 3.8970000743865967
+    },
+    {
+      "date": "2026-01-20",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3094.568115234375,
+      "distance": 11425.0703125,
+      "calories": 823.0,
+      "activeCalories": null,
+      "averageHR": 147.0,
+      "maxHR": 170.0,
+      "averageSpeed": 3.691999912261963
+    },
+    {
+      "date": "2026-01-19",
+      "name": null,
+      "type": "road_biking",
+      "parentType": 2,
+      "duration": 9408.15625,
+      "distance": 81577.078125,
+      "calories": 1981.0,
+      "activeCalories": null,
+      "averageHR": 133.0,
+      "maxHR": 149.0,
+      "averageSpeed": 8.670999526977539
+    },
+    {
+      "date": "2026-01-18",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 1289.511962890625,
+      "distance": 1019.2100219726562,
+      "calories": 220.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7900000214576721
+    },
+    {
+      "date": "2026-01-18",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3100.8330078125,
+      "distance": 10101.349609375,
+      "calories": 775.0,
+      "activeCalories": null,
+      "averageHR": 141.0,
+      "maxHR": 171.0,
+      "averageSpeed": 3.2579998970031743
+    },
+    {
+      "date": "2026-01-17",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 3408.6708984375,
+      "distance": 2602.81005859375,
+      "calories": 562.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7639999985694885
+    },
+    {
+      "date": "2026-01-17",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 189.6280059814453,
+      "distance": 138.52999877929688,
+      "calories": 30.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7310000061988831
+    },
+    {
+      "date": "2026-01-17",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 286.6709899902344,
+      "distance": 223.33999633789062,
+      "calories": 48.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7789999842643738
+    },
+    {
+      "date": "2026-01-16",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 1237.760986328125,
+      "distance": 977.2000122070312,
+      "calories": 211.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7889999747276306
+    },
+    {
+      "date": "2026-01-16",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3654.218994140625,
+      "distance": 10053.51953125,
+      "calories": 809.0,
+      "activeCalories": null,
+      "averageHR": 134.0,
+      "maxHR": 160.0,
+      "averageSpeed": 2.750999927520752
+    },
+    {
+      "date": "2026-01-15",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 1905.154052734375,
+      "distance": 1480.260009765625,
+      "calories": 320.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7770000100135804
+    },
+    {
+      "date": "2026-01-15",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 1100.70703125,
+      "distance": 813.8699951171875,
+      "calories": 175.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7390000224113464
+    },
+    {
+      "date": "2026-01-15",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 4434.60107421875,
+      "distance": 12354.599609375,
+      "calories": 1071.0,
+      "activeCalories": null,
+      "averageHR": 146.0,
+      "maxHR": 168.0,
+      "averageSpeed": 2.7860000133514404
+    },
+    {
+      "date": "2026-01-14",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 868.6259765625,
+      "distance": 627.8200073242188,
+      "calories": 135.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7229999899864196
+    },
+    {
+      "date": "2026-01-14",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 3704.18408203125,
+      "distance": 2854.429931640625,
+      "calories": 618.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7710000276565552
+    },
+    {
+      "date": "2026-01-13",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 2455.58203125,
+      "distance": 1794.3699951171875,
+      "calories": 386.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7310000061988831
+    },
+    {
+      "date": "2026-01-13",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 1803.18505859375,
+      "distance": 1360.7099609375,
+      "calories": 293.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7549999952316284
+    },
+    {
+      "date": "2026-01-12",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 1982.7969970703125,
+      "distance": 1514.9100341796875,
+      "calories": 326.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.7639999985694885
+    },
+    {
+      "date": "2026-01-11",
+      "name": null,
+      "type": "open_water_swimming",
+      "parentType": 26,
+      "duration": 814.31298828125,
+      "distance": 506.7799987792969,
+      "calories": 107.0,
+      "activeCalories": null,
+      "averageHR": null,
+      "maxHR": null,
+      "averageSpeed": 0.621999979019165
+    },
+    {
+      "date": "2026-01-10",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 5413.81494140625,
+      "distance": 20047.220703125,
+      "calories": 1476.0,
+      "activeCalories": null,
+      "averageHR": 148.0,
+      "maxHR": 173.0,
+      "averageSpeed": 3.703000068664551
+    },
+    {
+      "date": "2026-01-08",
+      "name": null,
+      "type": "treadmill_running",
+      "parentType": 1,
+      "duration": 3026.802001953125,
+      "distance": 12738.740234375,
+      "calories": 745.0,
+      "activeCalories": null,
+      "averageHR": 143.0,
+      "maxHR": 155.0,
+      "averageSpeed": 4.209000110626221
+    },
+    {
+      "date": "2026-01-06",
+      "name": null,
+      "type": "indoor_cycling",
+      "parentType": 2,
+      "duration": 4324.2509765625,
+      "distance": 0.0,
+      "calories": 1023.0,
+      "activeCalories": null,
+      "averageHR": 135.0,
+      "maxHR": 157.0,
+      "averageSpeed": 0.0
+    },
+    {
+      "date": "2026-01-05",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 2489.60009765625,
+      "distance": 7581.85986328125,
+      "calories": 638.0,
+      "activeCalories": null,
+      "averageHR": 141.0,
+      "maxHR": 167.0,
+      "averageSpeed": 3.0450000762939453
+    },
+    {
+      "date": "2026-01-04",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 4504.60595703125,
+      "distance": 17060.19921875,
+      "calories": 1226.0,
+      "activeCalories": null,
+      "averageHR": 147.0,
+      "maxHR": 170.0,
+      "averageSpeed": 3.7869999408721924
+    },
+    {
+      "date": "2026-01-03",
+      "name": null,
+      "type": "treadmill_running",
+      "parentType": 1,
+      "duration": 1224.8809814453125,
+      "distance": 5063.919921875,
+      "calories": 318.0,
+      "activeCalories": null,
+      "averageHR": 141.0,
+      "maxHR": 153.0,
+      "averageSpeed": 4.133999824523926
+    },
+    {
+      "date": "2026-01-03",
+      "name": null,
+      "type": "indoor_cycling",
+      "parentType": 2,
+      "duration": 6301.84619140625,
+      "distance": 0.0,
+      "calories": 1458.0,
+      "activeCalories": null,
+      "averageHR": 128.0,
+      "maxHR": 156.0,
+      "averageSpeed": 0.0
+    },
+    {
+      "date": "2026-01-02",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3045.48291015625,
+      "distance": 10053.990234375,
+      "calories": 787.0,
+      "activeCalories": null,
+      "averageHR": 144.0,
+      "maxHR": 153.0,
+      "averageSpeed": 3.3010001182556152
+    },
+    {
+      "date": "2026-01-01",
+      "name": null,
+      "type": "treadmill_running",
+      "parentType": 1,
+      "duration": 1800.7669677734375,
+      "distance": 6081.990234375,
+      "calories": 416.0,
+      "activeCalories": null,
+      "averageHR": 132.0,
+      "maxHR": 162.0,
+      "averageSpeed": 3.377000093460083
+    },
+    {
+      "date": "2026-01-01",
+      "name": null,
+      "type": "road_biking",
+      "parentType": 2,
+      "duration": 4691.40185546875,
+      "distance": 40810.890625,
+      "calories": 1030.0,
+      "activeCalories": null,
+      "averageHR": 130.0,
+      "maxHR": 160.0,
+      "averageSpeed": 8.699000358581543
+    },
+    {
+      "date": "2025-12-31",
+      "name": null,
+      "type": "running",
+      "parentType": 17,
+      "duration": 3229.06591796875,
+      "distance": 11405.3701171875,
+      "calories": 879.0,
+      "activeCalories": null,
+      "averageHR": 148.0,
+      "maxHR": 156.0,
+      "averageSpeed": 3.532000064849854
+    },
+    {
+      "date": "2025-12-30",
+      "name": null,
+      "type": "indoor_cycling",
+      "parentType": 2,
+      "duration": 3917.74609375,
+      "distance": 0.0,
+      "calories": 886.0,
+      "activeCalories": null,
+      "averageHR": 135.0,
+      "maxHR": 151.0,
+      "averageSpeed": 0.0
+    }
+  ],
+  "weight": [
+    {
+      "date": "2026-01-28",
+      "weight": 77.309,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.3,
+      "bodyWater": 58.2,
+      "boneMass": 4.489,
+      "muscleMass": 32.029
+    },
+    {
+      "date": "2026-01-27",
+      "weight": 77.43,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.0,
+      "bodyWater": 58.4,
+      "boneMass": 4.519,
+      "muscleMass": 32.06
+    },
+    {
+      "date": "2026-01-26",
+      "weight": 76.62,
+      "bmi": 22.899999618530273,
+      "bodyFat": 20.3,
+      "bodyWater": 58.1,
+      "boneMass": 4.429,
+      "muscleMass": 31.86
+    },
+    {
+      "date": "2026-01-25",
+      "weight": 78.139,
+      "bmi": 23.299999237060547,
+      "bodyFat": 20.0,
+      "bodyWater": 58.4,
+      "boneMass": 4.579,
+      "muscleMass": 32.229
+    },
+    {
+      "date": "2026-01-24",
+      "weight": 77.08,
+      "bmi": 23.0,
+      "bodyFat": 20.6,
+      "bodyWater": 58.0,
+      "boneMass": 4.44,
+      "muscleMass": 31.969
+    },
+    {
+      "date": "2026-01-23",
+      "weight": 77.3,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.1,
+      "bodyWater": 58.3,
+      "boneMass": 4.5,
+      "muscleMass": 32.029
+    },
+    {
+      "date": "2026-01-22",
+      "weight": 77.459,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.0,
+      "bodyWater": 58.4,
+      "boneMass": 4.519,
+      "muscleMass": 32.06
+    },
+    {
+      "date": "2026-01-21",
+      "weight": 77.3,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.3,
+      "bodyWater": 58.2,
+      "boneMass": 4.48,
+      "muscleMass": 32.029
+    },
+    {
+      "date": "2026-01-20",
+      "weight": 77.3,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.8,
+      "bodyWater": 57.8,
+      "boneMass": 4.449,
+      "muscleMass": 32.029
+    },
+    {
+      "date": "2026-01-19",
+      "weight": 78.319,
+      "bmi": 23.399999618530273,
+      "bodyFat": 20.9,
+      "bodyWater": 57.8,
+      "boneMass": 4.519,
+      "muscleMass": 32.27
+    },
+    {
+      "date": "2026-01-10",
+      "weight": 77.309,
+      "bmi": 23.100000381469727,
+      "bodyFat": 20.0,
+      "bodyWater": 58.4,
+      "boneMass": 4.51,
+      "muscleMass": 32.029
+    },
+    {
+      "date": "2026-01-06",
+      "weight": 76.669,
+      "bmi": 22.899999618530273,
+      "bodyFat": 19.6,
+      "bodyWater": 58.7,
+      "boneMass": 4.489,
+      "muscleMass": 31.87
+    },
+    {
+      "date": "2026-01-03",
+      "weight": 76.269,
+      "bmi": 22.799999237060547,
+      "bodyFat": 19.4,
+      "bodyWater": 58.8,
+      "boneMass": 4.469,
+      "muscleMass": 31.77
+    },
+    {
+      "date": "2026-01-02",
+      "weight": 76.29,
+      "bmi": 22.799999237060547,
+      "bodyFat": 19.4,
+      "bodyWater": 58.9,
+      "boneMass": 4.469,
+      "muscleMass": 31.78
+    },
+    {
+      "date": "2026-01-01",
+      "weight": 76.699,
+      "bmi": 22.899999618530273,
+      "bodyFat": 19.8,
+      "bodyWater": 58.6,
+      "boneMass": 4.48,
+      "muscleMass": 31.879
+    },
+    {
+      "date": "2025-12-31",
+      "weight": 75.769,
+      "bmi": 22.600000381469727,
+      "bodyFat": 19.9,
+      "bodyWater": 58.5,
+      "boneMass": 4.389,
+      "muscleMass": 31.649
+    },
+    {
+      "date": "2025-12-30",
+      "weight": 75.889,
+      "bmi": 22.700000762939453,
+      "bodyFat": 20.0,
+      "bodyWater": 58.4,
+      "boneMass": 4.389,
+      "muscleMass": 31.68
+    }
+  ]
+}
