@@ -8,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  ReferenceLine,
 } from "recharts";
 
 interface TrendChartProps {
@@ -15,6 +16,8 @@ interface TrendChartProps {
   data: { date: string; value: number }[];
   color: string;
   yAxisLabel: string;
+  /** Optional Y-axis domain e.g. [20, 130] for HRV (ms) */
+  yAxisDomain?: [number, number];
 }
 
 function formatValue(value: number, label: string): string {
@@ -24,17 +27,37 @@ function formatValue(value: number, label: string): string {
   return value.toFixed(1);
 }
 
+function formatAvgLabel(value: number, yAxisLabel: string): string {
+  if (yAxisLabel === "Score") return `Avg: ${Math.round(value)}%`;
+  if (yAxisLabel === "ms") return `Avg: ${value.toFixed(1)} ms`;
+  if (yAxisLabel === "Hours") return `Avg: ${value.toFixed(1)}h`;
+  return `Avg: ${value.toFixed(1)}`;
+}
+
 export default function TrendChart({
   title,
   data,
   color,
   yAxisLabel,
+  yAxisDomain,
 }: TrendChartProps) {
+  const periodAvg =
+    data.length > 0
+      ? data.reduce((sum, d) => sum + d.value, 0) / data.length
+      : null;
+
   return (
     <div className="bg-white dark:bg-slate-800/80 rounded-2xl shadow-md border border-slate-200/80 dark:border-slate-600/50 p-4 sm:p-6">
-      <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">
-        {title}
-      </h3>
+      <div className="flex items-center justify-between gap-2 mb-4">
+        <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+          {title}
+        </h3>
+        {periodAvg != null && (
+          <span className="text-sm font-medium text-slate-500 dark:text-slate-400 shrink-0">
+            {formatAvgLabel(periodAvg, yAxisLabel)}
+          </span>
+        )}
+      </div>
       <ResponsiveContainer width="100%" height={280}>
         <AreaChart
           data={data}
@@ -67,6 +90,8 @@ export default function TrendChart({
             tick={{ fill: "#64748b", fontSize: 12 }}
             width={36}
             tickLine={{ stroke: "#94a3b8" }}
+            domain={yAxisDomain ?? ["auto", "auto"]}
+            allowDataOverflow={!!yAxisDomain}
             label={{
               value: yAxisLabel,
               angle: -90,
@@ -74,6 +99,14 @@ export default function TrendChart({
               style: { fill: "#64748b", fontSize: 12 },
             }}
           />
+          {periodAvg != null && (
+            <ReferenceLine
+              y={periodAvg}
+              stroke="#94a3b8"
+              strokeDasharray="5 5"
+              strokeOpacity={0.8}
+            />
+          )}
           <Tooltip
             contentStyle={{
               backgroundColor: "#1e293b",

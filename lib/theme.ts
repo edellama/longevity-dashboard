@@ -36,6 +36,22 @@ export function getRecoveryColor(zone: RecoveryZone): string {
   }
 }
 
+/**
+ * Normalize Whoop hrv_rmssd_milli to display milliseconds (30–100 ms).
+ * - Raw value already in ms (e.g. 45.5) → use as-is.
+ * - Value in (0, 1] (e.g. 0.045 seconds) → multiply by 1000.
+ * - Value > 200 (e.g. 4493, wrong unit) → divide by 100.
+ * Do NOT multiply by 1000 when value is already in ms.
+ */
+export function normalizeHrvToMs(hrv_rmssd_milli: number | null | undefined): number | null {
+  if (hrv_rmssd_milli == null) return null;
+  const v = Number(hrv_rmssd_milli);
+  if (Number.isNaN(v) || v <= 0) return null;
+  if (v > 0 && v <= 1) return v * 1000; // seconds → ms
+  if (v > 200) return v / 100;           // hundredths → ms
+  return v;                              // already ms
+}
+
 export function getReadinessSummary(recoveryScore: number | null): string {
   if (recoveryScore === null || recoveryScore === undefined) {
     return "Connect your Whoop to see your readiness.";

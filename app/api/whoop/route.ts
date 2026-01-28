@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
 const WHOOP_API_BASE = "https://api.prod.whoop.com/developer/v2";
+const WHOOP_PAGE_LIMIT = 25;
 
 async function getAccessToken(): Promise<string | null> {
   const cookieStore = await cookies();
@@ -31,6 +32,34 @@ async function fetchWhoopData(endpoint: string) {
   return response.json();
 }
 
+/** Fetch all pages for a collection endpoint (recovery, sleep, workout). */
+async function fetchWhoopCollection(
+  path: string,
+  start: string | null,
+  end: string | null
+): Promise<{ records: unknown[] }> {
+  const allRecords: unknown[] = [];
+  let nextToken: string | null = null;
+
+  do {
+    const params = new URLSearchParams();
+    if (start) params.append("start", start);
+    if (end) params.append("end", end);
+    params.append("limit", String(WHOOP_PAGE_LIMIT));
+    if (nextToken) params.append("nextToken", nextToken);
+
+    const queryParam = `?${params.toString()}`;
+    const data = await fetchWhoopData(`${path}${queryParam}`);
+
+    const records = data.records ?? [];
+    allRecords.push(...records);
+
+    nextToken = data.next_token ?? null;
+  } while (nextToken);
+
+  return { records: allRecords };
+}
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
@@ -45,41 +74,32 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    let endpoint = "";
-    const params = new URLSearchParams();
-    
-    if (start) {
-      params.append("start", start);
-    }
-    if (end) {
-      params.append("end", end);
-    }
-    
-    const queryString = params.toString();
-    const queryParam = queryString ? `?${queryString}` : "";
-
-    switch (type) {
-      case "recovery":
-        endpoint = `/recovery${queryParam}`;
-        break;
-      case "sleep":
-        endpoint = `/activity/sleep${queryParam}`;
-        break;
-      case "workout":
-        endpoint = `/activity/workout${queryParam}`;
-        break;
-      case "profile":
-        endpoint = "/user/profile/basic";
-        break;
-      default:
-        return NextResponse.json(
-          { error: "Invalid type parameter" },
-          { status: 400 }
-        );
+    if (type === "profile") {
+      const data = await fetchWhoopData("/user/profile/basic");
+      return NextResponse.json(data);
     }
 
-    const data = await fetchWhoopData(endpoint);
-    return NextResponse.json(data);
+    const isCollection =
+      type === "recovery" ||
+      type === "sleep" ||
+      type === "workout";
+
+    if (isCollection) {
+      const path =
+        type === "recovery"
+          ? "/recovery"
+          : type === "sleep"
+          ? "/activity/sleep"
+          : "/activity/workout";
+
+      const data = await fetchWhoopCollection(path, start, end);
+      return NextResponse.json(data);
+    }
+
+    return NextResponse.json(
+      { error: "Invalid type parameter" },
+      { status: 400 }
+    );
   } catch (error) {
     console.error("Whoop API error:", error);
     return NextResponse.json(

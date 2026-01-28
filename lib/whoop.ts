@@ -9,6 +9,7 @@ export interface WhoopRecovery {
     user_calibrating: boolean;
     recovery_score: number;
     resting_heart_rate: number;
+    /** HRV RMSSD in milliseconds (e.g. 54.3 = 54.3 ms). Use as-is; do not divide by 1000. */
     hrv_rmssd_milli: number;
     spo2_percentage?: number;
     skin_temp_celsius?: number;

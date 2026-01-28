@@ -10,7 +10,7 @@ import {
   WhoopSleep,
   WhoopWorkout,
 } from "@/lib/whoop";
-import { getReadinessSummary, colors } from "@/lib/theme";
+import { getReadinessSummary, colors, normalizeHrvToMs } from "@/lib/theme";
 import TodayMetricCard from "@/components/TodayMetricCard";
 import TrendChart from "@/components/TrendChart";
 
@@ -52,6 +52,7 @@ export default function Dashboard() {
         const endDate = new Date();
         const startDate = new Date();
         startDate.setDate(startDate.getDate() - rangeDays);
+        startDate.setUTCHours(0, 0, 0, 0);
 
         const startISO = startDate.toISOString();
         const endISO = endDate.toISOString();
@@ -80,18 +81,18 @@ export default function Dashboard() {
     loadData();
   }, [rangeDays]);
 
-  // Slice data to selected range for charts
+  // Chart data: API returns newest first; reverse so oldest→newest for X-axis
   const chartRecovery = useMemo(
-    () => recoveryData.slice(0, rangeDays).reverse(),
-    [recoveryData, rangeDays]
+    () => [...recoveryData].reverse(),
+    [recoveryData]
   );
   const chartSleep = useMemo(
-    () => sleepData.slice(0, rangeDays).reverse(),
-    [sleepData, rangeDays]
+    () => [...sleepData].reverse(),
+    [sleepData]
   );
   const chartWorkout = useMemo(
-    () => workoutData.slice(0, rangeDays).reverse(),
-    [workoutData, rangeDays]
+    () => [...workoutData].reverse(),
+    [workoutData]
   );
 
   // 7-day averages for comparison
@@ -123,10 +124,10 @@ export default function Dashboard() {
         : null;
     const hrvAvg =
       r.length > 0
-        ? r.reduce(
-            (sum, x) => sum + (x.score?.hrv_rmssd_milli ?? 0) / 1000,
-            0
-          ) / r.length
+        ? r.reduce((sum, x) => {
+            const v = normalizeHrvToMs(x.score?.hrv_rmssd_milli);
+            return sum + (v ?? 0);
+          }, 0) / r.length
         : null;
     return { recoveryAvg, sleepAvg, strainAvg, hrvAvg };
   }, [recoveryData, sleepData, workoutData]);
@@ -159,10 +160,8 @@ export default function Dashboard() {
   }
 
   const recoveryScore = todayRecovery?.score?.recovery_score ?? null;
-  const hrv =
-    todayRecovery?.score?.hrv_rmssd_milli != null
-      ? (todayRecovery.score!.hrv_rmssd_milli / 1000).toFixed(1)
-      : null;
+  const hrvRaw = normalizeHrvToMs(todayRecovery?.score?.hrv_rmssd_milli);
+  const hrv = hrvRaw != null ? hrvRaw.toFixed(1) : null;
   const sleepHours =
     todaySleep?.score?.stage_summary &&
     todaySleep.score.stage_summary.total_light_sleep_time_milli != null &&
@@ -190,8 +189,8 @@ export default function Dashboard() {
       : undefined;
   const hrvComparison =
     hrv != null && avg7.hrvAvg != null
-      ? `${Number(hrv) > avg7.hrvAvg ? "↑" : "↓"} ${(
-          Math.abs(Number(hrv) - avg7.hrvAvg) as number
+      ? `${Number(hrv) > avg7.hrvAvg ? "↑" : "↓"} ${Math.abs(
+          Number(hrv) - avg7.hrvAvg
         ).toFixed(1)} ms vs 7d avg`
       : undefined;
   const hrvComparisonBetter =
@@ -330,13 +329,11 @@ export default function Dashboard() {
                   month: "short",
                   day: "numeric",
                 }),
-                value:
-                  r.score?.hrv_rmssd_milli != null
-                    ? r.score.hrv_rmssd_milli / 1000
-                    : 0,
+                value: normalizeHrvToMs(r.score?.hrv_rmssd_milli) ?? 0,
               }))}
               color="#0ea5e9"
               yAxisLabel="ms"
+              yAxisDomain={[30, 80]}
             />
             <TrendChart
               title="Sleep (hours)"
