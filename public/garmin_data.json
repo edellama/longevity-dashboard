@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-28T13:15:44.582487",
+  "fetchedAt": "2026-01-28T14:58:08.980136",
   "dateRange": {
     "start": "2025-12-29",
     "end": "2026-01-28"
@@ -397,16 +397,16 @@
     },
     {
       "date": "2026-01-28",
-      "steps": null,
-      "calories": 187.0,
-      "activeCalories": 0.0,
-      "distance": null,
-      "floors": 0.0,
-      "restingHeartRate": null,
-      "minHeartRate": null,
-      "maxHeartRate": null,
-      "averageStress": -1,
-      "bodyBattery": null
+      "steps": 9410,
+      "calories": 2040.0,
+      "activeCalories": 821.0,
+      "distance": 12670,
+      "floors": 3.42979,
+      "restingHeartRate": 86,
+      "minHeartRate": 65,
+      "maxHeartRate": 175,
+      "averageStress": 36,
+      "bodyBattery": 0
     }
   ],
   "sleepData": [
@@ -873,7 +873,7 @@
     },
     {
       "date": "2026-01-28",
-      "restingHeartRate": null,
+      "restingHeartRate": 86,
       "maxHeartRate": null,
       "minHeartRate": null
     }

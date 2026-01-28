@@ -24,7 +24,7 @@ import BiomarkerSummaryTable from "@/components/biomarkers/BiomarkerSummaryTable
 import AddResultForm from "@/components/biomarkers/AddResultForm";
 import ExerciseSection from "@/components/ExerciseSection";
 import GlucoseSection from "@/components/GlucoseSection";
-import { GarminData, fetchGarminData, getLatestWeight, formatWeight, categorizeActivity, formatDuration } from "@/lib/garmin";
+import { GarminData, fetchGarminData, getLatestWeight, formatWeight, categorizeActivity, formatDuration, getTodaySummary, formatSteps, calculateAverages } from "@/lib/garmin";
 import { LingoData, fetchLingoData, getGlucoseColor, getTrendArrow } from "@/lib/lingo";
 
 const TIME_RANGES = [
@@ -310,6 +310,17 @@ export default function Dashboard() {
   // Weight from Garmin
   const latestWeight = garminData ? getLatestWeight(garminData) : null;
 
+  // Steps from Garmin
+  const todaySummary = garminData ? getTodaySummary(garminData) : null;
+  const garminAverages = garminData ? calculateAverages(garminData) : null;
+  const todaySteps = todaySummary?.steps ?? null;
+  const stepsComparison = todaySteps != null && garminAverages?.avgSteps
+    ? `${todaySteps > garminAverages.avgSteps ? "↑" : "↓"} ${Math.abs(todaySteps - garminAverages.avgSteps).toLocaleString()} vs avg`
+    : undefined;
+  const stepsComparisonBetter = todaySteps != null && garminAverages?.avgSteps
+    ? todaySteps > garminAverages.avgSteps
+    : undefined;
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
@@ -352,7 +363,7 @@ export default function Dashboard() {
           <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-4">
             Today
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 sm:gap-5">
             <TodayMetricCard
               title="Recovery"
               value={recoveryScore != null ? `${recoveryScore}%` : "—"}
@@ -392,6 +403,13 @@ export default function Dashboard() {
               value={lingoData?.current ? `${lingoData.current.value}` : "—"}
               comparison={lingoData?.current ? `${getTrendArrow(lingoData.current.trend)} ${lingoData.current.trendMessage || "mg/dL"}` : "No CGM data"}
               borderColor={lingoData?.current ? getGlucoseColor(lingoData.current.value) : "#94a3b8"}
+            />
+            <TodayMetricCard
+              title="Steps"
+              value={todaySteps != null ? formatSteps(todaySteps) : "—"}
+              comparison={stepsComparison}
+              comparisonBetter={stepsComparisonBetter}
+              borderColor="#6366f1"
             />
           </div>
           {sleepQuality != null && (
@@ -527,6 +545,21 @@ export default function Dashboard() {
               }))}
               color="#f97316"
               yAxisLabel="Strain"
+            />
+            <TrendChart
+              title="Steps"
+              data={(garminData?.dailySummaries || [])
+                .slice()
+                .sort((a, b) => a.date.localeCompare(b.date))
+                .map((s) => ({
+                  date: new Date(s.date).toLocaleDateString(undefined, {
+                    month: "short",
+                    day: "numeric",
+                  }),
+                  value: s.steps,
+                }))}
+              color="#6366f1"
+              yAxisLabel="Steps"
             />
           </div>
         </section>

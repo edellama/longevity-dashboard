@@ -247,6 +247,22 @@ export function getLatestSleep(data: GarminData): GarminSleepData | null {
 }
 
 /**
+ * Get today's daily summary
+ */
+export function getTodaySummary(data: GarminData): GarminDailySummary | null {
+  if (!data.dailySummaries || !data.dailySummaries.length) return null;
+  const today = new Date().toISOString().slice(0, 10);
+  return data.dailySummaries.find(s => s.date === today) || null;
+}
+
+/**
+ * Format steps with commas
+ */
+export function formatSteps(steps: number): string {
+  return steps.toLocaleString();
+}
+
+/**
  * Calculate averages for key metrics
  */
 export function calculateAverages(data: GarminData): {
